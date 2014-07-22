@@ -47,8 +47,8 @@ try:
                 else:
                     coord = "no circle found"
                     cv2.putText(frame,coord,(10,30), font, 2,(0,0,255),2)
-                    #keep turning if no balls seen
-                    command = "R"
+                    #return error if no balls seen
+                    command = "E"
                     cv2.putText(frame,command,(10,50), font, 2,(0,0,255),2)
                 
             cv2.imshow('detected circles',frame)
@@ -64,7 +64,3 @@ try:
 except Exception,e:
     print "Fatal Error Occured:"
     print str(e)
-          
-
-       
-
