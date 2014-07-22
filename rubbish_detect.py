@@ -26,7 +26,8 @@ try:
             ret, frame = cap.read()
         while True:
             ret, frame = cap.read()
-            #if a frame was captured successfully 
+            #if a frame was captured successfully
+            #no else to match it because it will just skip to the next frame automatically
             if ret == True:
                 frame = cv2.resize(frame, (320,240))
                 frame = cv2.medianBlur(frame,5)
@@ -50,7 +51,8 @@ try:
                     #return error if no balls seen
                     command = "E"
                     cv2.putText(frame,command,(10,50), font, 2,(0,0,255),2)
-                
+
+            #out of ret test because it wont pass an error outside of it    
             cv2.imshow('detected circles',frame)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
