@@ -60,7 +60,11 @@ try:
 
     else:
         print "Camera Failed To Initialize"
+        cap.release()
+        cv2.destroyAllWindows()
 
 except Exception,e:
     print "Fatal Error Occured:"
     print str(e)
+    cap.release()
+    cv2.destroyAllWindows()
