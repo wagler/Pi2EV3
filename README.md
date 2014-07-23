@@ -7,8 +7,8 @@ This library utilizes the Raspberry Pi as an image processing device to track a 
 go and what to do in order to capture the ball.
 
 To setup the EV3 and Raspberry Pi you will need to install the following on the Raspberry Pi:
-Opencv-Python, Paramiko-Python
-Which are both available on the apt repository system.
+OpenCV-Python and Paramiko-Python, which provide image processing libraries and SSH libraries respectively.
+Both are available on the apt repository system.
 
 To setup the EV3 follow the EV3 Linux Development over at: 
 https://github.com/mindboards/ev3dev
