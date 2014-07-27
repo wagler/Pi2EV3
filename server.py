@@ -1,6 +1,7 @@
 from socket import socket, gethostbyname, AF_INET, SOCK_DGRAM
 import sys
 import os
+#put this on the EV3
 PORT_NUMBER = 5000
 SIZE = 100000
 
